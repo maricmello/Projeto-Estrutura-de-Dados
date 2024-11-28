@@ -10,6 +10,11 @@ matplotlib.use("TkAgg")
 #Carregar os dados
 df = pd.read_csv('violencia_mulher.csv', delimiter=';')
 
+#Analisando os dados 
+df.columns
+df['Frequência'].unique()
+df['Relação_vítima_suspeito'].unique()
+
 # Categorizar a relação como 'Familiar' ou 'Não Familiar'
 familiar_relations = [
     'EX-COMPANHEIRO(A)', 'ESPOSA(O)', 'TIO(A)', 'COMPANHEIRO(A)',
